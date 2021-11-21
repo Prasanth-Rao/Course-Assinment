@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     </head>
+
+     <body>
+          <h1>{{heading}}</h1>
+          <table>
+               <tr>
+                    <td>{{product1}}</td>
+                    <td>{% if type == 'e' %}
+                              <img src="{% static 'images/e1.jpg' %}" width="100px" height="60px">
+                         {% elif type == 't' %}
+                              <img src="{% static 'images/t1.jpg' %}" width="100px" height="60px">
+                         {% elif type == 's' %}
+                              <img src="{% static 'images/s1.jpg' %}" width="100px" height="60px">
+                         {% endif %}
+                    </td>
+               </tr>
+               <tr>
+                    <td>{{product2}}</td>
+                    <td>{% if type == 'e' %}
+                              <img src="{% static 'images/e2.jpg' %}" width="100px" height="60px">
+                         {% elif type == 't' %}
+                              <img src="{% static 'images/t2.jpg' %}" width="100px" height="60px">
+                         {% elif type == 's' %}
+                              <img src="{% static 'images/s2.jpg' %}" width="100px" height="60px">
+                         {% endif %}
+                    </td>
+               </tr>
+               <tr>
+                    <td>{{product3}}</td>
+                    <td>{% if type == 'e' %}
+                              <img src="{% static 'images/e3.jpg' %}" width="100px" height="60px">
+                         {% elif type == 't' %}
+                              <img src="{% static 'images/t3.jpg' %}" width="100px" height="60px">
+                         {% elif type == 's' %}
+                              <img src="{% static 'images/s3.jpg' %}" width="100px" height="60px">
+                         {% endif %}
+                    </td>
+               </tr>
+          </table>
+          
+     </body>
+</html>

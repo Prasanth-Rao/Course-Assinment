@@ -1,0 +1,26 @@
+body{
+     margin:50px;
+     border:5px solid blue;
+     padding: 50px 50px;
+     background-color: antiquewhite;
+}
+
+ul{
+     list-style-type: none;
+     padding:10px;
+}
+
+a{
+     text-decoration: none;
+     font-size: 24px;
+     font-family: monospace;
+}
+
+a:hover{
+     color: green;
+     font-weight: bold;
+}
+
+li{
+     padding: 10px;
+}
